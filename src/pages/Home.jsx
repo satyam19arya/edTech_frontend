@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { MdArrowRightAlt } from "react-icons/md";
 import HighlightedText from '../components/core/Homepage/HighlightedText';
 import Button from '../components/core/Homepage/Button';
-// import Hero1 from '../assets/Images/hero1.png';
-// import Hero2 from '../assets/Images/hero2.png';
-// import Hero3 from '../assets/Images/hero3.png';
+import Hero1 from '../assets/Images/hero1.png';
+import Hero2 from '../assets/Images/hero2.png';
+import Hero3 from '../assets/Images/hero3.png';
 import CodeBlock from '../components/core/Homepage/CodeBlock';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -20,6 +20,7 @@ import Compare_with_others from "../assets/Images/Compare_with_others.svg";
 import Plan_your_lessons from "../assets/Images/Plan_your_lessons.svg";
 import Footer from "../components/common/Footer";
 import ReviewSlide from '../components/common/ReviewSlide';
+import ExploreMore from '../components/core/Homepage/ExploreMore';
 
 const Home = () => {
   useEffect(() => {
@@ -70,16 +71,16 @@ const Home = () => {
           From beginner to developer, we've got you covered. Build the skills you need to thrive in the tech industry and make a difference in the world with technology.       
         </div>
 
-        <div className='flex flex-row gap-7 mt-4 mb-28'>
+        <div className='flex flex-row gap-7 mt-4 lg:mb-32'>
           <Button active={true} link={"/signup"}>Signup</Button>
           <Button active={false} link={"/login"}>Login</Button>
         </div>
 
-        {/* <div className='flex items-center justify-center gap-[10rem]'>
+        <div className='flex flex-col lg:flex-row items-center justify-between lg:gap-[10rem]'>
           <img className='object-contain h-52' src={Hero1} alt="Hero1" />
-          <img className='object-contain h-40' src={Hero3} alt="Hero2" />
-          <img className='object-contain h-40' src={Hero2} alt="Hero3" />
-        </div> */}
+          <img className='hidden lg:block object-contain h-40' src={Hero3} alt="Hero2" />
+          <img className='hidden lg:block object-contain h-40' src={Hero2} alt="Hero3" />
+        </div>
 
         <div>
           <CodeBlock
@@ -134,6 +135,7 @@ const Home = () => {
           />
         </div>
 
+        <ExploreMore />
       </div>
 
       {/* Section 2 */}
