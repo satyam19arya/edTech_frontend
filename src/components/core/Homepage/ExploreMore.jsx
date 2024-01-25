@@ -33,8 +33,8 @@ const ExploreMore = () => {
         <div className='hidden lg:flex gap-5 mt-5 mx-auto bg-richblack-800 text-richblack-200 p-1 rounded-full font-medium drop-shadow-[0_1.5px_rgba(255,255,255,0.25)]'>
           {tabsName.map((element, index) => {
             return (
-              <div className={`text-[16px] flex flex-row items-center gap-2 px-7 py-[7px] rounded-full transition-all duration-200 cursor-pointer hover:bg-richblack-900 hover:text-richblack-5 
-              ${currentTab == element ? "bg-richblack-900 text-richblack-5 font-medium" : "text-richblack-200"}`} key={index} onClick={() => setMyCards(element)}>
+              <div className={`text-[16px] px-7 py-[7px] rounded-full transition-all duration-200 cursor-pointer hover:bg-richblack-900 hover:text-richblack-5 
+              ${currentTab === element ? "bg-richblack-900 text-richblack-5 font-medium" : "text-richblack-200"}`} key={index} onClick={() => setMyCards(element)}>
                 {element}
               </div>
             );

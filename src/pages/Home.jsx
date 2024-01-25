@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { MdArrowRightAlt } from "react-icons/md";
-import HighlightedText from '../components/core/Homepage/HighlightedText';
-import Button from '../components/core/Homepage/Button';
-import Hero1 from '../assets/Images/hero1.png';
-import Hero2 from '../assets/Images/hero2.png';
-import Hero3 from '../assets/Images/hero3.png';
-import CodeBlock from '../components/core/Homepage/CodeBlock';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+
+import HighlightedText from '../components/core/Homepage/HighlightedText';
+import Button from '../components/core/Homepage/Button';
+import CodeBlock from '../components/core/Homepage/CodeBlock';
+import Footer from "../components/common/Footer";
+import ReviewSlide from '../components/common/ReviewSlide';
+import ExploreMore from '../components/core/Homepage/ExploreMore';
+
 import Logo1 from "../assets/TimeLineLogo/Logo1.svg";
 import Logo2 from "../assets/TimeLineLogo/Logo2.svg";
 import Logo3 from "../assets/TimeLineLogo/Logo3.svg";
@@ -18,9 +19,6 @@ import TimeLineImage from "../assets/Images/TimelineImage.png";
 import Know_your_progress from "../assets/Images/Know_your_progress.svg";
 import Compare_with_others from "../assets/Images/Compare_with_others.svg";
 import Plan_your_lessons from "../assets/Images/Plan_your_lessons.svg";
-import Footer from "../components/common/Footer";
-import ReviewSlide from '../components/common/ReviewSlide';
-import ExploreMore from '../components/core/Homepage/ExploreMore';
 
 const Home = () => {
   useEffect(() => {
@@ -76,12 +74,6 @@ const Home = () => {
           <Button active={false} link={"/login"}>Login</Button>
         </div>
 
-        <div className='flex flex-col lg:flex-row items-center justify-between lg:gap-[10rem]'>
-          <img className='object-contain h-52' src={Hero1} alt="Hero1" />
-          <img className='hidden lg:block object-contain h-40' src={Hero3} alt="Hero2" />
-          <img className='hidden lg:block object-contain h-40' src={Hero2} alt="Hero3" />
-        </div>
-
         <div>
           <CodeBlock
             position={"lg:flex-row"}
@@ -104,8 +96,7 @@ const Home = () => {
               text: "Learn more",
             }}
             codeColor={"text-white"}
-            codeblock={`#include <iostream>\n using namespace std;\n\nint main() {\n cout << "Hello, World!";\n int x = 22; \n cout << x << endl;\n return 0;\n}            `}
-            backgroundGradient={<div className="codeblock1 absolute"></div>}
+            codeblock={`#include <iostream>\n using namespace std;\n\nint main() {\n cout << "Hello, World!";\n int x = 22; \n cout << x << endl;\n return 0;\n}`}
           />
         </div>
 
