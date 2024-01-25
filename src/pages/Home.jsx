@@ -15,7 +15,7 @@ import Logo1 from "../assets/TimeLineLogo/Logo1.svg";
 import Logo2 from "../assets/TimeLineLogo/Logo2.svg";
 import Logo3 from "../assets/TimeLineLogo/Logo3.svg";
 import Logo4 from "../assets/TimeLineLogo/Logo4.svg";
-import TimeLineImage from "../assets/Images/TimelineImage.png";
+import TimeLineImage from '../assets/Images/timeline.png';
 import Know_your_progress from "../assets/Images/Know_your_progress.svg";
 import Compare_with_others from "../assets/Images/Compare_with_others.svg";
 import Plan_your_lessons from "../assets/Images/Plan_your_lessons.svg";
@@ -51,9 +51,9 @@ const Home = () => {
   return (
     <div>
       {/* Section 1 */}
-      <div className='w-11/12 mx-auto flex flex-col items-center justify-between gap-8 text-white'>
+      <div className='relative w-11/12 mx-auto flex flex-col items-center justify-between gap-8 text-white'>
         <Link to={"/signup"}>
-          <div className='mt-32 mx-auto bg-richblack-900 rounded-full p-1 font-medium text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-105 group hover:drop-shadow-none'>
+          <div className='mt-28 lg:mt-32 mx-auto bg-richblack-900 rounded-full p-1 font-medium text-richblack-200 drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] transition-all duration-200 hover:scale-105 group hover:drop-shadow-none'>
             <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
               <button>Become an Instructor </button>
               <MdArrowRightAlt />
@@ -109,7 +109,7 @@ const Home = () => {
               </div>
             }
             subheading={
-              "Code with confidence. We'll guide you every step of the way. The possibilities are endless. Learn to code, build anything.."
+              "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."
             }
             button1={{
               active: true,
@@ -131,7 +131,7 @@ const Home = () => {
 
       {/* Section 2 */}
       <div className='bg-pure-greys-5'>
-        <div className='homepage_bg h-[320px]'>
+        <div className='homepage_bg h-[100px] lg:h-[320px]'>
           <div className='w-11/12 flex flex-col mx-auto items-center justify-between gap-8'>
             <div className='lg:h-[150px]'></div>
             <div className='flex flex-row gap-7 text-white lg:mt-8'>
@@ -141,23 +141,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='mx-auto flex w-10/12 flex-col items-center justify-between gap-8'>
-          <div className='mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0'>
-            <div className='text-3xl font-semibold lg:w-[45%]'>
-              Get the skills you need for a <HighlightedText text={"job that is in demand."} />
-            </div>
-
-            <div className='flex flex-col items-start gap-6 lg:w-[40%]'>
-              <div className='text-[16px]'>
-                The modern StudyNotion is the dictates its own terms. Today, to
-                be a competitive specialist requires more than.
-              </div>
-              <Button active={true} link={"/signup"}>Signup</Button>
-            </div>
-          </div>
-
+        <div className='mx-auto flex w-11/12 flex-col items-center justify-between gap-8 mt-10'>
           {/* TimeLine section */}
-          <div className='flex flex-col lg:flex-row gap-20 items-center'>
+          <div className='flex flex-col lg:flex-row gap-28 items-center'>
             <div className='lg:w-[45%] flex flex-col gap-14 lg:gap-3'>
               {TimeLine.map((element, i) => {
                 return (
@@ -178,21 +164,20 @@ const Home = () => {
             </div>
             
             <div className='w-fit h-fit'>
-              <img src={TimeLineImage} alt='TimeLine' className='shadow-white shadow-[20px_20px_0px_0px] object-cover hidden lg:block lg:h-[420px]'/>
+              <img src={TimeLineImage} alt='TimeLine' className='lg:h-[300px]'/>
             </div>
           </div>
 
           {/* Learing Language */}
           <div className='text-4xl font-semibold text-center my-20'>
-            Your swiss knife for <HighlightedText text={"learning any programming language"} />
+            The Ultimate Guide To Ace  <HighlightedText text={"SDE Interviews"} />
             <div className='text-center text-richblack-700 font-medium lg:w-[75%] mx-auto leading-6 text-base mt-3'>
-              Using spin making learning multiple languages easy. with 20+
-              languages realistic voice-over, progress tracking, custom schedule and more.
+              Our finest get offers from top-notch companies.
             </div>
             <div className='flex flex-col lg:flex-row items-center justify-center mt-8 lg:mt-0'>
-              <img src={Know_your_progress} alt='Know_your_progress' className='object-contain lg:-mr-32' />
-              <img src={Compare_with_others} alt='Compare_with_others' className='object-contain lg:-mb-10 lg:-mt-0 -mt-12'/>
-              <img src={Plan_your_lessons} alt='Plan_your_lessons' className='object-contain lg:-ml-36 lg:-mt-5 -mt-16'/>
+              <img src={Know_your_progress} alt='Know_your_progress' className='lg:-mr-32' />
+              <img src={Compare_with_others} alt='Compare_with_others' className='lg:-mb-10 lg:-mt-0 -mt-12'/>
+              <img src={Plan_your_lessons} alt='Plan_your_lessons' className='lg:-ml-36 lg:-mt-5 -mt-16'/>
             </div>
           </div>
         </div>

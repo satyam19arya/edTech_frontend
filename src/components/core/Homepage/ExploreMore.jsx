@@ -14,7 +14,7 @@ const tabsName = [
 const ExploreMore = () => {
     const [currentTab, setCurrentTab] = useState(tabsName[0]);
     const [courses, setCourses] = useState(HomePageExplore[0].courses);
-    const [currentCard, setCurrentCard] = useState(HomePageExplore[0].courses[0]);
+    const [currentCard, setCurrentCard] = useState(HomePageExplore[0].courses[0].heading);
 
     const setMyCards = (value) => {
         setCurrentTab(value);
@@ -27,10 +27,10 @@ const ExploreMore = () => {
     <div>
         <div className='text-4xl font-semibold text-center my-10'>
             Unlock the <HighlightedText text={"Power of Code"} />
-            <p className='text-center text-richblack-300 text-lg font-semibold mt-1'>Learn to build anything you can imagine</p>
+            <p className='text-center text-richblack-300 font-normal text-lg mt-2'>Learn to build anything you can imagine</p>
         </div>
 
-        <div className='hidden lg:flex gap-5 mt-5 mx-auto bg-richblack-800 text-richblack-200 p-1 rounded-full font-medium drop-shadow-[0_1.5px_rgba(255,255,255,0.25)]'>
+        <div className='hidden lg:flex gap-5 -mt-5 mx-auto bg-richblack-800 text-richblack-200 p-1 rounded-full font-medium drop-shadow-[0_1.5px_rgba(255,255,255,0.25)]'>
           {tabsName.map((element, index) => {
             return (
               <div className={`text-[16px] px-7 py-[7px] rounded-full transition-all duration-200 cursor-pointer hover:bg-richblack-900 hover:text-richblack-5 

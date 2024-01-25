@@ -50,19 +50,19 @@ export const HomePageExplore = [
         courses : [
             {
                 heading : "Web development",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
+                description : "This course teaches you about web development, including HTML, CSS, and JavaScript frameworks like React and Angular",
                 level : 'Beginner',
                 lessionNumber : 6
             },
             {
-                heading : "DevOps",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
+                heading : "Cloud/DevOps",
+                description : "This course teaches you about cloud computing, including virtualization, containers, and cloud native applications",
                 level : 'Beginner',
                 lessionNumber : 6
             },
             {
-                heading : "Cloud computing",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
+                heading : "Data Science",
+                description : "This course teaches you about data science, including data visualization, statistics, and machine learning",
                 level : 'Beginner',
                 lessionNumber : 6
             },
@@ -73,19 +73,19 @@ export const HomePageExplore = [
         courses : [
             {
                 heading : "MERN Stack",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
+                description : "This course teaches you about the MERN stack, including MongoDB, Express, React, and Node.js",
                 level : 'Beginner',
                 lessionNumber : 54
             },
             {
                 heading : "MEAN Stack",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
+                description : "This course teaches you about the MEAN stack, including MongoDB, Express, Angular, and Node.js",
                 level : 'Beginner',
                 lessionNumber : 67
             },
             {
                 heading : "LAMP Stack",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
+                description : "This course teaches you about the LAMP stack, including Linux, Apache, MySQL, and PHP",
                 level : 'Beginner',
                 lessionNumber : 44
             },
@@ -96,19 +96,19 @@ export const HomePageExplore = [
         courses : [
             {
                 heading : "Learn AWS",
-                description : "This course covers the basic concepts of HTML including creating and structuring web pages, adding text, links, images, and more.",
+                description : "This course teaches you about AWS, including EC2, S3, RDS, and more. It also covers DevOps concepts like CI/CD and CloudFormation",
                 level : 'Beginner',
                 lessionNumber : 6
             },
             {
                 heading : "Learn Azure",
-                description : "This course explores advanced topics in HTML5 and CSS3, including animations, transitions, and layout techniques",
+                description : "This course teaches you about Azure, including virtual machines, storage, and more. It also covers DevOps concepts like CI/CD and ARM templates",
                 level : 'Beginner',
                 lessionNumber : 6
             },
             {
                 heading : "Learn GCP",
-                description : "This course teaches responsive web design techniques, allowing web pages to adapt to different devices and screen sizes",
+                description : "This course teaches you about GCP, including Compute Engine, Cloud Storage, and more. It also covers DevOps concepts like CI/CD and Deployment Manager",
                 level : 'Beginner',
                 lessionNumber : 6
             },

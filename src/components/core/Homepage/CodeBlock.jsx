@@ -13,10 +13,10 @@ const CodeBlock = ({
     codeblock
 }) => {
   return (
-    <div className={`flex ${position} flex-col my-8 justify-between lg:my-12`}>
+    <div className={`flex ${position} flex-col my-8 justify-between lg:my-12 gap-8`}>
         <div className='w-[100%] lg:w-[48%] flex flex-col gap-8'>
             {heading}
-            <div className='text-richblack-300 text-base font-bold w-[85%] -mt-3'>
+            <div className='text-richblack-300 text-base w-[85%] -mt-3'>
                 {subheading}
             </div>
 
